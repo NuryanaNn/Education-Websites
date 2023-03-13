@@ -1,0 +1,1287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    padding: 1rem 5%;
+    justify-content: space-between;
+    background-color: #1c3b8c;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navigation ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navigation li{
+    margin-right: 30px;
+}
+
+.navigation a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation button{
+    padding: 7px;
+    color: orange;
+    background-color: #fff;
+    border: 1px solid orange;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.heroSection .card{
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    left: 0;
+}
+
+.card1{
+    background-image: url('hero1.jpg');
+}
+
+.card2{
+    background-image: url('hero2.jpg');
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.card2 .heroBtn ul{
+    justify-content: flex-end;
+}
+
+.card3{
+    background-image: url('hero3.jpg');
+    justify-content: center;
+    text-align: center;
+}
+
+.card3 .heroBtn ul{
+    justify-content: center;
+}
+
+.heroText{
+    max-width: 600px;
+    z-index: 10;
+}
+
+.heroText h3{
+    color: #fff;
+    background-color: #1c3b8c;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.heroText h1{
+    font-size: 60px;
+    color: #fff;
+    text-shadow:1px 1px  #000;
+    text-transform: uppercase;
+    margin-top: 15px;
+    line-height: 70px;
+}
+
+.heroText span{
+    color: #1c3b8c;
+}
+
+.heroText p{
+    margin-top: 20px;
+    color: #fff;
+}
+
+.heroBtn{
+    margin-top: 20px;
+}
+
+.heroBtn ul{
+    display: flex;
+    list-style: none;
+}
+
+.heroBtn li{
+    margin-right: 20px;
+}
+
+.heroBtn button{
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #1c3b8c;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    font-size: 17px;
+}
+
+/* Feature */
+.featureSection{
+    padding: 3rem 5%;
+    background-color: #f8f9fa;
+}
+
+.featureSection .featureTitle{
+    width: 60%;
+}
+
+.featureSection .featureTitle h3{
+    font-size: 40px;
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.featureSection .featureTitle h3::before{
+    content: '';
+    width: 3px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: orange;
+}
+
+.featureSection .featureTitle span{
+    color: orange;
+}
+
+.featureContent{
+    padding-top: 5rem;
+}
+
+.featureContent .card{
+    width: 270px;
+    text-align: center;
+    box-shadow: 0px 4px 21px 0px rgba(0,0,0,0.37);
+    padding: 40px 20px;
+    border-radius: 5px;
+    color: gray;
+    cursor: pointer;
+}
+
+.featureContent .card:hover{
+    box-shadow: -2px 3px 41px 4px rgba(0,0,0,0.75);
+    transition: .5s;
+}
+
+.featureContent i{
+    color: orange;
+    font-size: 25px;
+}
+
+.featureContent h3{
+    padding: 10px 0;
+    font-size: 25px;
+    color: #000;
+}
+
+.featurecardWrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.featurecardWrapper .products{
+    background-color: orange;
+    padding: 5px 15px;
+}
+
+.featurecardWrapper .products h3{
+    font-size: 15px;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    text-align: left;
+}
+
+.featurecardWrapper input, .featurecardWrapper select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    outline: none;
+    border: none;
+}
+
+.featurecardWrapper .products button{
+    background-color: #1c3b8c;
+    padding: 10px 15px;
+    color: #f8f9fa;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.featurecardWrapper .products .inputBx{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* About Section */
+.aboutUsSection{
+    padding: 4rem 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutUsSection .aboutImg{
+    max-width: 600px;
+}
+
+.aboutImg .images{
+    width: 100%;
+}
+
+.aboutImg .images img{
+    width: 100%;
+}
+
+.aboutUsSection .aboutText{
+    width: 500px;
+}
+
+.aboutUsSection .aboutText h3{
+    position: relative;
+    padding-left: 10px;
+}
+
+.aboutUsSection .aboutText h3::before{
+    content: '';
+    width: 3px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: orange;
+}
+
+.aboutUsSection .aboutText h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.aboutUsSection .aboutText button{
+    padding: 15px 20px;
+    background-color: #1c3b8c;
+    color: #fff;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Project Section */
+.project{
+    padding: 5rem 5%;
+}
+
+.projectContent{
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem ;
+    background-position: bottom;
+    padding: 5rem 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectContent .cardOne{
+    background-color: #fff;
+    width: 250px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid orange;
+    border-radius: 5px;
+}
+
+.projectContent .cardTwo{
+    background-color: #fff;
+    width: 250px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid pink;
+    border-radius: 5px;
+}
+
+.projectContent .cardThree{
+    background-color: #fff;
+    width: 250px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid aqua;
+    border-radius: 5px;
+}
+
+.projectContent .cardFour{
+    background-color: #fff;
+    width: 250px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid green;
+    border-radius: 5px;
+}
+
+
+.projectContent .cardTwo .icnBx{
+    background-color: pink;
+    width: 80%;
+    padding: 10px;
+}
+
+.projectContent .cardOne .icnBx{
+    background-color: orange;
+    width: 80%;
+    padding: 10px;
+}
+
+.projectContent .cardThree .icnBx{
+    background-color: aqua;
+    width: 80%;
+    padding: 10px;
+}
+
+.projectContent .cardFour .icnBx{
+    background-color: green;
+    width: 80%;
+    padding: 10px;
+}
+
+.projectContent .cardOne .icnBx i, 
+.projectContent .cardTwo .icnBx i,
+.projectContent .cardThree .icnBx i,
+.projectContent .cardFour .icnBx i{
+    color: #fff;
+    font-size: 30px;
+}
+
+.projectContent .cardOne h1,
+.projectContent .cardTwo h1,
+.projectContent .cardThree h1,
+.projectContent .cardFour h1
+{
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 25px;
+    position: relative;
+}
+
+.projectContent .cardOne h1:before{
+    content: '';
+    background-color: orange;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+}
+
+.projectContent .cardTwo h1:before{
+    content: '';
+    background-color: pink;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+}
+
+.projectContent .cardThree h1:before{
+    content: '';
+    background-color: aqua;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+}
+
+.projectContent .cardFour h1:before{
+    content: '';
+    background-color: green;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+}
+
+.projectContent .cardOne p,
+.projectContent .cardTwo p,
+.projectContent .cardThree p,
+.projectContent .cardFour p
+{
+    margin: 20px 0;
+}
+
+
+/* Popular Section */
+.popular{
+    padding: 5rem 5%;
+}
+
+.popular .popularTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .popularTitle h1{
+    font-size: 40px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.popular .popularTitle span{
+    color: orange;
+}
+
+
+.popular .popularTitle h1::before{
+    background-color: orange;
+    content: '';
+    height: 100%;
+    width: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.popular .popularTitle button{
+    background-color: #1c3b8c;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.popularContent{
+    margin-top: 5rem;
+    background-color: #f8f9fa;
+    padding: 5rem 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popularContent .card{
+    text-align: center;
+    width: 180px;
+    background-color: #fff;
+    padding: 50px 15px;
+    border-radius: 5px;
+    color: orange;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.popularContent .card:hover{
+    background-color: orange;
+    color: #fff;
+    transition: .5s;
+}
+
+.popularContent i{
+    font-size: 25px;
+}
+
+.popularContent .cardOne{
+    background-color: orange;
+    color: #fff;
+}
+
+.popularContent .card h3{
+    margin-top: 15px;
+    color: #000;
+}
+
+/* Popular Course */
+.popularCourse{
+    display: flex;
+    box-shadow: 0px 4px 21px 0px rgba(0,0,0,0.37);
+    justify-content: space-between;
+}
+
+.popularCourse .courseText{
+    padding: 3rem;
+    max-width: 50%;
+}
+
+.popularCourse .courseText h3{
+    font-size: 35px;
+}
+
+.popularCourse .courseText h5{
+    margin-top: 15px;
+    color: #333;
+}
+
+.popularCourse .courseText span, .popularCourse .courseText p {
+    color: gray;
+}
+
+.ratting{
+    display: flex;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.ratting li{
+    color: gold;
+}
+
+.popularCourse .times{
+    display: flex;
+    align-items: center;
+    color: gray;
+    margin-top: 30px;
+}
+
+.popularCourse .times i, .popularCourse .lecture i{
+    margin-right: 10px;
+}
+
+.popularCourse .lecture{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.popularCourse .lecture i{
+    color: gold;
+}
+
+.popularCourse button{
+    padding: 15px 20px;
+    background-color: #1c3b8c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.courseimg{
+    width: 600px;
+    position: relative;
+}
+
+.courseimg .icns{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    cursor: pointer;
+}
+
+.courseimg .icns i{
+    font-size: 40px;
+    color: #333;
+    background-color: #fff;
+    padding: 30px 35px;
+    border-radius: 50%;
+}
+
+.courseimg .icns i:hover{
+    background-color: orange;
+    color: #fff;
+    transition: .5s;
+}
+
+.courseimg img{
+    height: 100%;
+    width: 100%;
+}
+
+/* Upcoming Content */
+.upcomingSection{
+    background-color: #f1f8ff;
+    padding: 5rem 5%;
+}
+
+.upcomingSection .upcomingTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upcomingSection .upcomingTitle h3{
+    position: relative;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.upcomingSection .upcomingTitle span{
+    color: orange;
+}
+
+.upcomingSection .upcomingTitle button{
+    padding: 15px 20px;
+    background-color: #1c3b8c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.upcomingContent .card{
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.upcomingContent .card .dateBx{
+    background-color: orange;
+    height: 130px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.upcomingContent .card .dateBx h3{
+    font-size: 40px;
+    color: #1c3b8c;
+}
+
+.upcomingContent .card .upcomingBx{
+    width: 700px;
+    color: gray;
+}
+
+.upcomingContent .card .upcomingBx h3{
+    color: #000;
+}
+
+.upcomingContent .card ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.upcomingContent .card ul i{
+    margin-right: 10px;
+    color: orange;
+}
+
+.upcomingContent button{
+    padding: 15px 20px;
+    background-color: #1c3b8c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Contact */
+.contact{
+    padding: 5rem 5%;
+}
+
+.contact .contactTitle{
+    background: linear-gradient(90deg, rgba(63,57,198,1) 0%, rgba(145,116,24,1) 68%);
+    display: flex;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.contact .contactTitle button{
+    padding: 15px 20px;
+    background-color: #1c3b8c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Service Section */
+.service{
+    padding: 5rem 5%;
+}
+
+.service .serviceTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service .serviceTitle h3{
+    position: relative;
+    font-size: 40px;
+}
+
+
+.service .serviceTitle h3 span{
+    color: orange;
+}
+
+.service .serviceTitle button{
+    padding: 15px 20px;
+    background-color: #1c3b8c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.serviceContent{
+    margin-top: 50px;
+}
+
+.serviceContent .card{
+    width: 350px;
+    text-align: center;
+    border: 5px solid #1c3b8c;
+    padding: 30px 5px;
+}
+
+.serviceContent .card i{
+    font-size: 30px;
+    background-color: #1c3b8c;
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.serviceContent .card h3{
+    margin: 10px 0;
+}
+
+.serviceContent .cardWraper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+/* teachers */
+.teachers{
+    padding: 5rem 5%;
+}
+
+.teachers .teacherTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.teachers .teacherTitle h3{
+    font-size: 35px;
+}
+
+.teachers .teacherTitle span{
+    color: orange;
+}
+
+.teachers .teacherTitle button{
+    padding: 15px 20px;
+    background-color: #1c3b8c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.teacherContent{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.teacherContent .card{
+    width: 270px;
+    text-align: center;
+    position: relative;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: -2px 3px 11px 4px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+.teacherContent .card:before{
+    content: '';
+    background-color: gray;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+
+.teacherContent .card .images{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    position: relative;
+    margin-top: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.teacherContent .card .images img{
+    width: 100%;
+    height: 100%;
+}
+
+.teacherContent .card h3{
+    margin-top: 20px;
+}
+
+.teacherContent .card p{
+    color: gray;
+}
+
+.teacherContent .card .sci{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px 0;
+    background: linear-gradient(90deg, rgba(63,57,198,1) 0%, rgba(145,116,24,1) 68%);
+}
+
+.teacherContent .card .sci a{
+    color: #fff;
+}
+
+/* gallery */
+.gallery{
+    padding: 4rem 5%;
+}
+
+.gallery .galleryTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.gallery .galleryTitle h3{
+    font-size: 35px;
+}
+
+.gallery .galleryTitle h3 span{
+    color: orange;
+}
+
+.gallery button{
+    padding: 15px 20px;
+    background-color: #1c3b8c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.galleryContent{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.galleryContent .card{
+    width: 260px;
+    cursor: pointer;
+}
+
+.galleryContent .card .images{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galleryContent .card img{
+    width: 100%;
+}
+
+.galleryContent .overlay{
+    width: 95%;
+    height: 95%;
+    background-color: rgba(255, 255, 255, 0.7);
+    left: 2.5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    visibility: hidden;
+    transition: .1s;
+}
+
+.galleryContent .card:hover .overlay{
+    visibility: visible;
+    transition: .1s;
+}
+
+.galleryContent .overlay .icns{
+    margin-bottom: 10px;
+}
+
+.galleryContent .overlay i{
+    background-color: #1c3b8c;
+    padding: 10px;
+    margin-right: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.galleryContent .overlay i:hover{
+    background-color: orange;
+    transform: .5s;
+}
+
+/* Pricing section */
+.pricing{
+    padding: 5rem 5%;
+}
+
+.pricing .pricingTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing .pricingTitle h3{
+    font-size: 35px;
+}
+
+.pricing .pricingTitle span{
+    color: orange;
+}
+
+.pricing .pricingTitle p{
+    max-width: 500px;
+}
+
+.pricing .pricingTitle button{
+    padding: 15px 20px;
+    background-color: #1c3b8c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.pricing .pricingContent{
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricing .pricingContent .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid orange;
+    cursor: pointer;
+    position: relative;
+}
+
+.pricing .pricingContent .card .title{
+    background: linear-gradient(90deg, rgba(63,57,198,1) 0%, rgba(145,116,24,1) 68%);
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.pricing .pricingContent .card ul{
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.pricing .pricingContent .card ul li{
+    margin-bottom: 20px;
+}
+
+.pricing .pricingContent .card i{
+    margin-right: 15px;
+    color: orange;
+}
+
+.pricing .pricingContent .card .buyTitle{
+    width: 100%;
+    background: linear-gradient(90deg, rgba(63,57,198,1) 0%, rgba(145,116,24,1) 68%);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing .pricingContent .card .buyTitle button{
+    padding: 15px 20px;
+    background-color: #1c3b8c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.pricing .pricingContent .card .price{
+    position: absolute;
+    right: 0;
+    top: 2.8rem;
+    z-index: 10;
+    background-color: #fff;
+    border: 1px solid orange;
+    padding: 5px 20px;
+}
+
+.testimonials{
+    padding: 5rem 5%;
+    background-image: url('bg2.jpg');
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials .card{
+    background: linear-gradient(90deg, rgba(63,57,198,1) 0%, rgba(145,116,24,1) 68%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    color: #fff;
+    width: 700px;
+}
+
+.testimonials .card .images{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.testimonials .card .images img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid orange;
+    margin-right: 20px;
+}
+
+.testimonials .card p{
+    max-width: 700px;
+}
+
+.news{
+    padding: 5rem 5%;
+}
+
+.news h3{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.news .newsTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.news h3 span{
+    color: orange;
+}
+
+.news .newsTitle button{
+    padding: 15px 20px;
+    background-color: #1c3b8c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.news .newsContent{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news .newsContent .card{
+    width: 350px;
+    border: .5px solid #efefef;
+}
+
+.news .newsContent .card .images{
+    width: 100%;
+}
+
+.news .newsContent .card .images img{
+    width: 100%;
+}
+
+.news .newsContent .card h4{
+    color: #000;
+    font-size: 20px;
+}
+
+.news .newsContent .card ul{
+    display: flex;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.news .newsContent .card ul li{
+    margin-right: 10px;
+}
+
+.news .newsContent .card ul li i{
+    margin-right: 5px;
+    color: orange;
+}
+
+.news .newsContent .card .teks{
+    padding: 10px;
+    color: gray;
+}
+
+/* Newslatter */
+.newslatter{
+    padding: 3rem 5%;
+}
+
+.newslatter .card{
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newslatter .card .teks{
+    width: 600px;
+    color: #fff;
+}
+
+.newslatter .card input{
+    padding: 1rem;
+    width: 350px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newslatter .card button{
+    padding: 15px 20px;
+    background-color: #1c3b8c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer{
+    background: linear-gradient(90deg, rgba(63,57,198,1) 0%, rgba(145,116,24,1) 68%);
+    padding: 2rem 5%;
+    color: #fff;
+    display: flex;
+}
+
+.footers{
+    width: 350px;
+    justify-content: space-between;
+}
+
+.footer1{
+    margin-right: 50px;
+}
+
+.footer1 p{
+    margin: 10px 0;
+}
+
+.footer1 ul{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer1 ul li{
+    margin-right: 10px;
+}
+
+.footer1 ul li i{
+    background-color: orange;
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+}
+
+.footer2 h3{
+    margin-bottom: 20px;
+}
+
+.footer2 ul{
+    list-style: none;
+}
+
+.footer2 ul li{
+    margin-bottom: 20px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+}
